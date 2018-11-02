@@ -56,7 +56,7 @@ class RunSchedulerCommandTest extends Unit
      */
     public function testGetName(): void
     {
-        $this->assertEquals('scheduler:run', $this->runSchedulerCommand->getName());
+        $this->assertEquals(RunSchedulerCommand::NAME, $this->runSchedulerCommand->getName());
     }
 
     /**
@@ -64,7 +64,7 @@ class RunSchedulerCommandTest extends Unit
      */
     public function testGetDescription(): void
     {
-        $this->assertEquals('Run scheduler.', $this->runSchedulerCommand->getDescription());
+        $this->assertEquals(RunSchedulerCommand::DESCRIPTION, $this->runSchedulerCommand->getDescription());
     }
 
     /**
